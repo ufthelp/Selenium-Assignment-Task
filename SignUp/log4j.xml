@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+ <log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+ 
+ <!-- Creating the File Appender -->
+ <appender name="fileAppender" class="org.apache.log4j.FileAppender">
+ 
+    <!-- File to write logs --> 
+ <param name="File" value="log4j_logfile.log"/>
+  <!-- Layout = "PatternLyaout" -->
+ <layout class="org.apache.log4j.PatternLayout">
+  <!-- Printing message with date , time & class name  -->
+  <param name="ConversionPattern" value="%d{dd MMM yyyy HH:mm:ss} %5p %c{1} - %m%n" />
+ </layout>
+ 
+</appender>
+  
+<root>
+
+ <level value="INFO"/>
+ <appender-ref ref="fileAppender"/>
+ 
+</root>
+ 
+</log4j:configuration>

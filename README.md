@@ -1,5 +1,5 @@
 # Selenium-Project-Task
-This assignment covers the automation framework designing using Selenium.
+This workflow covers the automation framework designing using Selenium.
 # Automation using Selenium API
 Perquisites Technology stack:-
 *Eclipse	                 IDE
